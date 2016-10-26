@@ -51,11 +51,6 @@ containerFrame:SetScript("OnShow", function(self)
 	div:SetHeight(8)
 	div:SetTexture("Interface\\Common\\UI-TooltipDivider-Transparent")
 
-	local tr = self:CreateTitleRegion()
-	tr:SetPoint("TOPLEFT")
-	tr:SetPoint("TOPRIGHT")
-	tr:SetPoint("BOTTOM", div)
-
 	outputFrame:SetFading(false)
 	outputFrame:EnableMouseWheel(true)
 	outputFrame:SetScript("OnMouseWheel", function(self, delta)
